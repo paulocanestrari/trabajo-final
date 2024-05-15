@@ -1,0 +1,87 @@
+
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Verdana;
+}
+
+
+.cabezera {
+        background-image: url(imagenes/trekking2.png);
+        background-position: bottom;
+        background-position: left;
+        width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+    }
+.tpri {
+    font-family: mistral;
+    font-size: 6vw;
+    color: rgb(255, 0, 0);
+    margin-left: 20px;
+    padding-top: 30px ;
+    text-shadow: 10px 5px 9px  rgb(159, 159, 216);
+    }
+
+
+footer {
+
+    background-color: #333;
+    color: #ffffffdc;
+    height: 300px;
+    width: 100%;
+    padding: 10px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contenedorf {
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap:wrap ;
+    align-items: center;
+}
+.social-links{
+
+    align-items: center;
+    padding: 60px;
+    height: 200px;
+    width: 50%;
+   box-sizing: border-box;
+}
+.social-link{
+    padding: 15px;
+}
+.email{
+    color: #ffffffdc
+}
+.email:hover{
+    color: rgb(129, 129, 216);
+}
+.copyr{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+.contacto{
+    padding-top: 60px;
+    padding-left: 20vw;
+    text-align: justify;
+    height: 200px;
+    width: 50%;
+    font-family: Verdana;
+}
+
+.imagenicon{
+    width: 60px;
+    height: 60px;
+    filter:    drop-shadow(0px 0px 5px rgb(247, 248, 160));
+    -webkit-filter:    drop-shadow(0px 0px 5px rgb(247, 248, 160));
+}
+.imagenicon:hover{
+    filter:    drop-shadow(0px 0px 5px rgb(55, 35, 233));
+    -webkit-filter:    drop-shadow(0px 0px 5px rgb(55, 35, 233));
+}
