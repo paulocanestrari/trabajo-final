@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+}
+
+.cabezera {
+  background-image: url(imagenes/trekking2.png);
+  background-position: bottom;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+.tpri {
+  font-family: mistral;
+
+  font-size: 6vw;
+  color: rgb(255, 0, 0);
+  margin-left: 20px;
+  padding-top: 30px;
+  text-shadow: 10px 5px 9px rgb(159, 159, 216);
+}
+.titulo {
+  position: s;
+  padding: 4px;
+}
+
+.seccion1 {
+  width: 100%;
+  height: auto;
+  background-image: url(imagenes/quija.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 1.5vw;
+  text-shadow: 1px 1px #534731;
+
+  color: rgb(244, 246, 247);
+}
+.opaco {
+  background-color: #000a;
+  width: 100%;
+  height: 100%;
+  padding: 4%;
+}
+
+.p1 {
+  font-family: poppins;
+  text-align: center;
+}
+.p2 {
+  font-family: poppins;
+  text-align: center;
+}
+
+/* carrusel */
+
+.seccion2 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.textcarrusel {
+display: flex;
+  font-family: poppins;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3vw;
+  width: 50%;
+}
+.carrusel {
+  width: 50%;
+  height: 500px;
+}
+.contenedorcarr {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+  position: relative;
+  
+}
+
+.myfotos {
+  width: 100%; 
+  height: 100%; 
+  max-width: 100%; 
+  max-height: 100%; 
+  overflow: hidden; 
+  position: relative;
+  object-fit: cover; 
+  transition: 1s ease;
+
+}
+#fotocarr {
+  width: 100%; 
+  height: auto;
+  display: block; 
+  position: absolute; 
+  top: 0;
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+
+
+}/* avanzar y retroceder carrusel */
+.avanzar,
+.retroceder {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+.avanzar {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  -ms-border-radius: 3px 0 0 3px;
+  -o-border-radius: 3px 0 0 3px;
+}
+
+.teximagen {
+  color: #f2f2f2;
+  background-color: #333a;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.indicadorpag {
+  text-align: center;
+}
+
+.indicador {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 1s ease;
+  user-select: none;
+}
+.retroceder:hover, 
+.avanzar:hover {
+  background-color: rgba(0, 0, 0, 0.8);}
+
+  .active, .indicador:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .fade {
+  animation-name: animacion;
+  animation-duration: 1.5s;
+}
+
+@keyframes animacion {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+ /*--------------------------------------------------*/
+footer {
+  background-color: #333;
+  color: #ffffffdc;
+  height: 300px;
+  width: 100%;
+  padding: 10px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contenedorf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.social-links {
+  align-items: center;
+  padding: 60px;
+  height: 200px;
+  width: 50%;
+  box-sizing: border-box;
+}
+.social-link {
+  padding: 15px;
+}
+.email {
+  color: #ffffffdc;
+}
+.email:hover {
+  color: rgb(129, 129, 216);
+}
+.copyr {
+  text-align: center;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+}
+.contacto {
+  padding-top: 60px;
+  padding-left: 20vw;
+  text-align: justify;
+  height: 200px;
+  width: 50%;
+  font-family: Verdana;
+}
+
+.imagenicon {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0px 0px 5px rgb(247, 248, 160));
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(247, 248, 160));
+}
+.imagenicon:hover {
+  filter: drop-shadow(0px 0px 5px rgb(55, 35, 233));
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(55, 35, 233));
+}

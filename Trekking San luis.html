@@ -1,67 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trekking </title>
-    <link rel="icon" href="imagenes/T.jpg">
-    <link rel="stylesheet" href="mystyle.css">
 
-</head>
-<body>
-<header>
-<div class="cabezera">
-    <div class="titulo">
-        <h1 class="tpri">Trekking en San Luis</h1>
-    </div>
-</div>
-</header>
-<main>
-    <div class "conteseccion1">
-     <div>
-     <p class="info1"> Recorriendo mi San Luis: somos una empresa dedicada al turismo, con gran experiencia en senderismo y trekking en diferentes puntos geograficos de San Luis. Ofrecemos guía para los amantes del deporte aventura que quieren conocer los hermosos y unicos escenarios naturales que ofrece nuestra Provincia .
-     </div>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trekking </title>
+        <link rel="icon" href="imagenes/T.jpg">
+        <link rel="stylesheet" href="trabajofinal.css">
+        <link rel="stylesheet" href="fonts.css">
 
+    </head>
 
+    <body>
 
-    <div class "conteseccion2">
-        <div>
-    <p class"exp"> Vivi tu propia experiencia</p>
-        </div>
-    </div>
-    
+        <main>
+            <div class="cabezera">
+                <div class="titulo">
+                    <h1 class="tpri">Trekking en San Luis</h1>
+                </div>
+            </div>
+            <div class="seccion1">
+                <div class="opaco">
+                    <p class="p1">
+                        Recorriendo mi San Luis:
+                    </p>
+                    <p class="p2">
 
-</div>
-<div class "cuerpo">
-    <h2>secciones</h2>
-</div>
+                        "Somos un grupo dedicada al turismo, con gran
+                        experiencia en senderismo en diferentes puntos
+                        geograficos de San Luis. Ofrecemos guía para los amantes
+                        del deporte aventura que quieren conocer
+                        los hermosos y unicos escenarios naturales que ofrece
+                        nuestra Provincia"
+                    </p>
+                </div>
 
-</main>
+            </div>
 
-<footer>
-    <div class="contenedorf">
-    <div class="social-links">
-            <a href="#face" class="social-link"><img src="icon/facebook_109862.png"alt= "Facebook" class="imagenicon"></a>
-            <a href="#what" class="social-link"><img src="icon/whatsapp_108042.png" alt="whatssap" class="imagenicon"></a>
-            <a href="#ins" class="social-link"><img src="icon/instagram_108043.png" alt="Instagram" class="imagenicon"></a>
-        </div>
-       <div class="contacto">
-        <h2>Contacto</h2>
-        <p>Para más información, contáctanos:</p>
-        <address>
-            Email: <a href="mailto:canestra_j@hotmail.com" class="email"> canestra_j@hotmail.com</a><br>
-            Teléfono: 26575463937
-        </address>
+            <div class="seccion2">
+                <div class="textcarrusel">
+                    <p> ¡Vive tu propia experiencia!</p>
+                </div>
+                <div class="carrusel">
+                    <div class="contenedorcarr">
+                        <div class="myfotos">
+                            <img id="fotocarr"
+                                style="width: 100%; height: auto;">
 
-       </div> 
-    </div>
-    <p class="copyr">&copy; 2024 Trekking San Luis. Todos los derechos reservados.</p>
+                            <div class="teximagen">
+                                <p id="textoim"></p>
+                            </div>
+                        </div>
 
-</footer>
+                        <a class="retroceder" onclick="anterior(-1)">
+                            < </a>
+                        <a class="avanzar" onclick="siguiente(1)"> > </a>
+                    </div>
 
+                    <div class="indicadorpag">
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(0)"></span>
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(1)"></span>
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(2)"></span>
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(3)"></span>
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(4)"></span>
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(5)"></span>
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(6)"></span>
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(7)"></span>
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(8)"></span>
+                        <span class="indicador"
+                            onclick="mostrarcarrusel(9)"></span>
+                            <span class="indicador"
+                            onclick="mostrarcarrusel(10)"></span>
+                    </div>
+                </div>
+            </div>
 
+            <div class "cuerpo">
+                <h2>secciones</h2>
+            </div>
 
+        </main>
 
-</body>
+        <footer>
+            <div class="contenedorf">
+                <div class="social-links">
+                    <a href="#face" class="social-link"><img
+                            src="icon/facebook_109862.png" alt="Facebook"
+                            class="imagenicon"></a>
+                    <a href="#what" class="social-link"><img
+                            src="icon/whatsapp_108042.png" alt="whatssap"
+                            class="imagenicon"></a>
+                    <a href="#ins" class="social-link"><img
+                            src="icon/instagram_108043.png" alt="Instagram"
+                            class="imagenicon"></a>
+                </div>
+                <div class="contacto">
+                    <h2>Contacto</h2>
+                    <p>Para más información, contáctanos:</p>
+                    <address>
+                        Email: <a href="mailto:canestra_j@hotmail.com"
+                            class="email"> canestra_j@hotmail.com</a><br>
+                        Teléfono: 26575463937
+                    </address>
+
+                </div>
+            </div>
+            <p class="copyr">&copy; 2024 Trekking San Luis. Todos los derechos
+                reservados.</p>
+
+        </footer>
+        <script src="codejava.js"> </script>
+    </body>
+
 </html>
