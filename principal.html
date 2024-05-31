@@ -12,19 +12,39 @@
     </head>
 
     <body>
-
-        <main>
+               
+        
+              
             <div class="cabezera">
+                <div class=header>
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <nav class="navbar">
+                        <a href="#" class="back-to-top">↑</a>
+                        <ul class="nav-list">
+                       <li> <a href="#seccion1">quienes somos?</a></li>
+                       <li><a href="#seccion2">Fotos de trekking</a></li>
+                        <li><a href="#seccion3">Hacer Trekking</a></li>
+                        <li><a href="child1/trekk1.html">Trekking Mirador comechingones</a></li>
+                        <li><a href="child2/trekk2.html">Trekking Salto de la Negra Libre</a></li>
+                        <li><a href="child3/trekk3.html">Trekking a Sierras de las Quijadas</a></li>
+                          </ul>
+                     </nav>
+                    </div>  
+                      
                 <div class="titulo">
                     <h1 class="tpri">Trekking en San Luis</h1>
                 </div>
             </div>
-            <div class="seccion1">
+            <div id="seccion1" class="seccion1">
                 <div class="opaco">
                     <p class="p1">
                         Recorriendo mi San Luis:
                     </p>
-                    <p class="p2">
+                    <p class="p1">
 
                         "Somos un grupo dedicada al turismo, con gran
                         experiencia en senderismo en diferentes puntos
@@ -37,15 +57,14 @@
 
             </div>
 
-            <div class="seccion2">
+            <div id="seccion2" class="seccion2">
                 <div class="textcarrusel">
-                    <p> ¡Vive tu propia experiencia!</p>
+                    <p class="tpri indicadorpag"> ¡Aventuras para disfrutar!</p>
                 </div>
                 <div class="carrusel">
                     <div class="contenedorcarr">
                         <div class="myfotos">
-                            <img id="fotocarr"
-                                style="width: 100%; height: auto;">
+                            <img id="fotocarr" class="fotos">
 
                             <div class="teximagen">
                                 <p id="textoim"></p>
@@ -84,11 +103,36 @@
                 </div>
             </div>
 
-            <div class "cuerpo">
-                <h2>secciones</h2>
+            <div id= "seccion3" class ="seccion3">
+                <h2 class="temporadas salidas popins">Temporada Otoño-Invierno</h2>
+                <h3 class=" popins temporadas">Nuestras salidas para esta temporada:</h3>
+                <div class="contop">
+                <div class="myfotos contenedor3">
+               
+                <a href="child1/trekk1.html" target="_self">
+                    <img src="imagenes/comenchingones.jpg" class="fotos">
+                </a>
+                <p class="teximagen ">Mirador comechingones</p>
+                <p class="info"> + info</p>
+                </div>
+                <div class="myfotos contenedor3">
+                    <a href="child2/trekk2.html" target="_self">
+                        <img src="imagenes/saltodelalibre.jpg" class="fotos">
+                    </a>
+                    <p class="teximagen">Salto de la negra libre</p>
+                    <p class="info"> + info</p>
+                </div>
+                <div class="myfotos contenedor3">
+                    <a href="child3/trekk3.html" target="_self">
+                        <img src="imagenes/quija.jpg" class="fotos" style="height: 100%;">
+                    </a>
+                    <p class="teximagen">Sierra de las quijadas</p>
+                    <p class="info"> + info</p>
+                </div>
+                </div>
+
             </div>
 
-        </main>
 
         <footer>
             <div class="contenedorf">

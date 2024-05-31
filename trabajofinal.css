@@ -4,17 +4,102 @@
   padding: 0;
   font-family: Verdana;
 }
+/*-----------------------------*/
+.header {
+  background-color: #3336;
+  color: #fff;
+  display: flex;
+   flex-direction: column;
+  
+ justify-content: center;
+  padding: 25px;
+  width: 6%;
+ 
+  position: fixed;
+ 
+}
+.header:hover {
+   width: 20%;
+  }
 
+.navbar {
+  display: none;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 2px;
+  padding: 10px;
+ 
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #3338;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+.nav-list li a:hover {
+  color: #e5e08c;
+  
+}
+.menu-toggle {
+  cursor: pointer;
+  display: block;
+}
+
+.menu-toggle span {
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  width: 25px;
+}
+
+.menu-open {
+  display: flex;
+}
+
+.back {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #8fa096;
+}
+/*-----------------------------*/
+body{
+  background-color: rgb(244, 246, 247);
+}
 .cabezera {
   background-image: url(imagenes/trekking2.png);
   background-position: bottom;
   background-position: left;
-  background-repeat: no-repeat;
-
   width: 100%;
   height: 600px;
   background-repeat: no-repeat;
 }
+.cabepag1 {
+  background-image: url(imagenes/pag1.jpg);
+  height: 160px;
+  }
+  .cabepag2 {
+    background-image: url(imagenes/pag2.jpg);
+    height: 160px;
+    }
+    .cabepag3 {
+      background-image: url(imagenes/quija.jpg);
+      height: 160px;
+      }
+      
+
 .tpri {
   font-family: mistral;
 
@@ -35,13 +120,13 @@
   background-image: url(imagenes/quija.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-shadow: 1px 1px #534731;
 
   color: rgb(244, 246, 247);
 }
 .opaco {
-  background-color: #000a;
+  background-color: rgba(0, 0, 0, 0.37);
   width: 100%;
   height: 100%;
   padding: 4%;
@@ -51,16 +136,12 @@
   font-family: poppins;
   text-align: center;
 }
-.p2 {
-  font-family: poppins;
-  text-align: center;
-}
 
 /* carrusel */
 
 .seccion2 {
   width: 100%;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -70,46 +151,50 @@ display: flex;
   font-family: poppins;
   justify-content: center;
   align-items: center;
-
-  font-size: 3vw;
-  width: 50%;
+  font-size: 2.5vw;
+  width: 40%;
 }
 .carrusel {
-  width: 50%;
-  height: 500px;
+  width: 56%;
+  height: 540px;
+  margin: 2%;
 }
 .contenedorcarr {
   width: 100%;
   height: 500px;
   margin-bottom: 10px;
   position: relative;
+  box-shadow: 1px 1px 10px 0.6px  rgb(48, 48, 58);
   
+}
+.popins {
+ font-family: poppins;
+ font-size: 20px;
+ color: #5a5454;
 }
 
 .myfotos {
-  width: 100%; 
-  height: 100%; 
-  max-width: 100%; 
-  max-height: 100%; 
-  overflow: hidden; 
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
   position: relative;
-  object-fit: cover; 
-  transition: 1s ease;
+  object-fit: cover;
+
 
 }
-#fotocarr {
-  width: 100%; 
+.fotos {
+  width: 100%;
   height: auto;
-  display: block; 
-  position: absolute; 
+  position: absolute;
   top: 0;
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-
-
-}/* avanzar y retroceder carrusel */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+  /* avanzar y retroceder carrusel */
 .avanzar,
 .retroceder {
   cursor: pointer;
@@ -124,9 +209,15 @@ display: flex;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  -ms-border-radius: 0 3px 3px 0;
+  -o-border-radius: 0 3px 3px 0;
 }
-
 .avanzar {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -157,8 +248,12 @@ display: flex;
   margin: 0 2px;
   background-color: #bbb;
   display: inline-block;
-  transition: background-color 1s ease;
+  transition:  1s ease;
   user-select: none;
+  -webkit-transition:  1s ease;
+  -moz-transition:  1s ease;
+  -ms-transition:  1s ease;
+  -o-transition:  1s ease;
 }
 .retroceder:hover, 
 .avanzar:hover {
@@ -167,18 +262,141 @@ display: flex;
   .active, .indicador:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  .fade {
+.fade {
   animation-name: animacion;
   animation-duration: 1.5s;
-}
+    }
 
 @keyframes animacion {
   from {
-    opacity: 0.4;
+    opacity: 0.3;
   }
   to {
     opacity: 1;
   }
+}
+ /*--------------seccion 3------------------------------------*/
+
+ .seccion3 {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(244, 246, 247);
+  margin: 5px;
+}
+.h2class{
+  padding: 10px;
+  margin: 10px;
+}
+.contop {
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor3 {
+  cursor:pointer;
+  background-color: #000a;
+  width: 300px;
+  height: 290px;
+  margin-top: 4% ;
+  position:relative;
+  box-shadow: 1px 1px 10px 0.6px  rgb(48, 48, 58);
+  transition: width 0.3s, height 0.3s;
+}
+
+.temporadas {
+  font-family: poppins;
+  text-align: center;
+  font-size: 32px;
+  color:rgb(247, 49, 49);
+  text-shadow: 10px 5px 9px rgb(159, 159, 216);
+}
+.salidas {
+  font-family: poppins;
+  font-size: 42px;
+}
+.descrip {
+
+  font-family: poppins;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 50%;
+}
+
+.info {
+  position: absolute;
+  border-radius: 8px;
+  right: 5%;
+  top:10%;
+  background-color: rgb(91, 60, 226);
+  color: white;
+  font-family: poppins;
+  padding: 1px;
+  font-size: 18px;
+  text-align: center;
+  width: 70px;
+  box-shadow: 1px 1px 10px 0.6px  rgb(48, 48, 58);
+}
+
+
+ /*-------------------------pag1-2 y 3------------------------*/
+body{
+  background-image: url(imagenes/fondo.jpg)
+}
+ .cuerpo{
+  display: flex;
+ width: 100%;
+ height: auto;
+ justify-content: center;
+  }
+ .contenedor4{
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  margin: 10px;
+}
+.inscribir{
+  box-shadow: 2px 2px 13px 0.8px  rgb(48, 48, 58);
+  background-color: rgb(60, 60, 230);
+  cursor:pointer;
+  width: 180px;
+  height: auto;
+  font-family: poppins;
+  border-radius:10px ;
+}
+.inscribir p{
+  text-align: center;
+  font-family: poppins;
+  color: rgb(242, 244, 248);
+  font-size: 28px;
+  padding: 5px;
+
+}
+.participar{
+
+  font-family: poppins;
+  color: brown;
+  font-size: 24px;
+  
+}
+
+.inscribir:hover{
+  width: 190px;
+  height: 55px;
+  box-shadow: 2px 2px 15px 0.8px  rgb(247, 94, 94);
+}
+
+.contenedor3:hover{
+  width: 330px;
+  height: 310px;
+  box-shadow: 2px 2px 15px 0.6px  rgb(48, 48, 58);
+}
+.mapa {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  
 }
  /*--------------------------------------------------*/
 footer {
@@ -239,3 +457,71 @@ footer {
   filter: drop-shadow(0px 0px 5px rgb(55, 35, 233));
   -webkit-filter: drop-shadow(0px 0px 5px rgb(55, 35, 233));
 }
+ /*--------------------formulario------------------------------*/
+ .container {
+  display: none;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background-color: #3333;
+}
+.container h2{
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+.form-control {
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  font-family: Tahoma, sans-serif;
+}
+
+.form-control input,
+.form-control select {
+  width: 100%;
+  padding: 8px;
+ 
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(60, 60, 230);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #0056b3;
+} 
+.inpu{
+  border: 3px solid rgb(236, 236, 229);
+}
+.error{
+  border: 2px solid rgba(221, 21, 7, 1);
+}
+
+#mensaje {
+  font-family: Geneva;
+  color: red;
+  }
+  #envioexitoso {
+
+    font-family: Geneva;
+    font-size: 24px;
+    color: #050401;
+
+    }

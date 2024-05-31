@@ -32,13 +32,16 @@ const imagcarr = [
     texto: "Trekk sierras de las Quijadas",
   },
 ];
+
 let longarray = imagcarr.length - 1;
 let carrindex = 0;
-//let inds = document.querySelectorAll("indicador");
+
 let indc=document.getElementsByClassName("indicador");
+let foto=document.getElementById("fotocarr");
 mostrarcarrusel(0);
 
 function siguiente(ind) {
+  
   carrindex += ind;
   if (carrindex > longarray) {
     carrindex = 0;
@@ -46,6 +49,7 @@ function siguiente(ind) {
   mostrarcarrusel(carrindex);
 }
 function anterior(ind) {
+  
   carrindex += ind;
   if (carrindex < 0) {
     carrindex = longarray;
@@ -53,14 +57,30 @@ function anterior(ind) {
   mostrarcarrusel(carrindex);
 }
 function mostrarcarrusel(ind) {
+    foto.src = imagcarr[ind].imagen;
 
-  document.getElementById("fotocarr").src = imagcarr[ind].imagen;
   document.getElementById("textoim").innerText = imagcarr[ind].texto;
-  for (let i = 0; i < indc.length; i++) {
-    indc[i].classList.remove("active"); }
-  
+    for (i = 0; i < indc.length; i++) {
+    indc[i].classList.remove("active");
+   }
+   foto.classList.add("fade");
     indc[ind].classList.add("active");
+    setTimeout(cambiarclase, 600);
+    }
    
+    function cambiarclase() {
+      foto.classList.remove("fade");
+    }
+/*-------------menu navegador -----------------------------*/
+let nav = document.querySelector('.navbar');
+document.getElementById('mobile-menu').addEventListener('click', abrir)
+function abrir() {
+  nav.classList.add('menu-open');
+};
+nav.addEventListener('mouseleave', cerrar) 
+function cerrar(){
   
-}
-  
+  nav.classList.remove('menu-open');
+};
+
+
